@@ -40,8 +40,10 @@ body {
     max-width: 90%;
     margin: 0 auto;
 }
-
-
+img{
+    width: 100%;
+    
+}
 
 /* navbar styles */
 .navbar-container {
@@ -90,6 +92,7 @@ body {
     padding: 10px 30px;
     border-radius: 15px;
     font-size: .7rem;
+    border: none;
 
 }
 
@@ -107,16 +110,11 @@ body {
 .banner-description {
     margin: 24px 0;
     max-width: 50%;
+    line-height: 24px;
 }
-
-.banner-img img {
-    width: 100%;
-}
-
 .banner-img {
     position: relative;
 }
-
 .btn-primary {
     border: 1px solid rgb(255, 255, 255);
     background-color: transparent;
@@ -125,7 +123,6 @@ body {
     margin-left: 5px;
     font-size: .7rem;
 }
-
 .five-hundred {
     position: absolute;
     top: 128px;
@@ -137,17 +134,14 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 13px;
 }
-
 .title {
     font-size: 2rem;
     font-weight: 900;
 }
-
 .sub-title {
     font-size: 0.9rem;
     font-weight: 300;
 }
-
 .three-hudred {
     position: absolute;
     height: 41px;
@@ -159,12 +153,10 @@ body {
     top: 417px;
     left: -69px;
 }
-
 .heading {
     font-size: 1.5rem;
     font-weight: 800;
 }
-
 .sub-heading {
     font-size: .9rem;
     font-weight: 400;
@@ -172,9 +164,7 @@ body {
 /* change your habit section  */
 .habit-container{
     text-align:center ;
-    margin-top: 100px ;
-  
-   
+    margin-top: 100px ;  
 }
 .habit-title{
     font-size: 1.75rem;
@@ -195,10 +185,8 @@ body {
 
 }
 .card img {
-    width: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-   
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%; 
 }
 .card-title{
 text-align: center;
@@ -209,7 +197,45 @@ margin-bottom: 10px;
 .card-description{
 text-align: center;
 font-size: .8rem;
+}
+/* run styles */
+.run-container{
+ margin: 20px 40px;
+   border-radius: 10px;
+   padding: 30px;
+   background-color: rgba(48, 48, 48, 0.54) ;
+   gap: 150px;
+}
+.run{
+    width: 60%;
+}
+.run h2{
+    font-size: 36px;
+}
 
+.run-subtitle {
+    line-height: 25px;
+    margin-top: 15px;
+    padding: 0 95px 0px 0px;
+    margin-bottom: 10px;
+}
+.run-img{
+    height: 250px;
+    width: 40%;
+}
+.run-img img{
+    border-radius:10px; 
+   height: 100%;
+
+   
+}
+.btn-secondary {
+    background-color: rgb(230, 83, 60);
+    padding: 15px 42px;
+    border-radius: 15px;
+    font-size: .7rem;
+    border: none;
+    margin: 24px 0 0 0;
 }
 
 @media screen and (max-width:576px) {
@@ -222,8 +248,16 @@ font-size: .8rem;
         display: none;
     }
 
-    .banner-container {
+    .banner-container,
+    .card-container,
+    .run-container {
         flex-direction: column;
+    }
+    .habit-container {
+        margin-top: 0px;
+    }
+    .card-container{
+        gap: 0;
     }
 
 }
