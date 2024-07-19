@@ -237,6 +237,20 @@ font-size: .8rem;
     border: none;
     margin: 24px 0 0 0;
 }
+/* training styles */
+.training-container{
+    
+}
+.training{
+    margin:80px 30px;
+}
+.training-img-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+}
+/* BMI Calculator styles */
+  
 
 @media screen and (max-width:576px) {
 
