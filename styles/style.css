@@ -211,10 +211,8 @@ img {
 .card-container {
     gap: 50px;
 }
-
 .card {
-    padding: 30px;
-
+    padding: 30px 25px;
 }
 
 .card img {
@@ -235,7 +233,7 @@ img {
 
 /* run styles */
 .run-container {
-    margin: 20px 40px;
+    margin: 20px 0;
     border-radius: 10px;
     padding: 30px;
     background-color: rgba(48, 48, 48, 0.54);
@@ -247,14 +245,14 @@ img {
 }
 
 .run h2 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: 800;
     padding-right: 29px;
 }
 .run-subtitle {
     line-height: 24px;
     margin-top: 15px;
-    padding: 0 41px 0px 0px;
+    padding: 0 55px 0px 0px;
     margin-bottom: 10px;
 }
 
@@ -347,17 +345,20 @@ img {
 }
 /* BMI Calculator styles */
 .bmi-container {
-    margin:50px 0 50px 250px;
-    
+    margin: 80px 0 80px 221px;
 }
-  .bmi-title{
-    font-size: 3rem;
+.bmi-chart {
+    width: 40%;
+}
+.bmi-title {
+    font-size: 2.75rem;
     font-weight: 800;
-  }
-  .bmi-description{
+}
+.bmi-description {
     font-size: .8rem;
     line-height: 18px;
-  }
+    padding-right: 305px;
+}
   .bmi-chart h3{
     color: rgb(255, 255, 255);
     margin-bottom: 30px;
@@ -383,20 +384,24 @@ color: rgba(154, 139, 139, 0.691);
   table{
     border-collapse: collapse;
   }
-  .bmi-calculate-container{
+  .bmi-calculate-section{
+    background-color: rgba(48, 48, 48, 0.54);
+
+  }
+  .bmi-calculate-container {
     justify-content: space-between;
-    background-color: rgba(48, 48, 48, 0.54) ;
-    padding: 40px 120px;
+    padding: 40px 60px;
     font-size: 1.5rem;
     font-weight: 800;
-  }
-  .calculation-description{
-    font-size: .8rem;
+    gap: 66px;
+}
+.calculation-description {
+    font-size: .9rem;
     margin: 10px 0 10px 0;
     line-height: 18px;
     color: rgba(154, 139, 139, 0.691);
     font-weight: 600;
-  }
+}
 
   input {
     height: 36px;
@@ -438,6 +443,41 @@ input::placeholder{
     font-weight: 600;
     
 }
+/* team styles */
+.team{
+    text-align: center
+  }
+  .team-title {
+    margin-top: 88px;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.team-description {
+    margin: 25px 0 50px 0;
+    line-height: 20px;
+}
+  .team-img-container{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    background-color:rgba(48, 48, 48, 0.54) ;
+    border-radius: 10px;
+    
+  }
+  .team-img {
+    margin: 15px 10px 15px 15px;
+    height: 331px;
+    position: relative;  
+}
+  .team-img img{
+    border-radius: 25px;
+    height: 100%;
+  }
+  .description {
+    position: absolute;
+    bottom: 15px;
+    z-index: 1;
+    left: 30px;
+}
 
 /* responsive styles */
 @media screen and (max-width:576px) {
@@ -456,7 +496,8 @@ input::placeholder{
 
     .banner-container,
     .card-container,
-    .run-container {
+    .run-container,
+    .bmi-calculate-container {
         flex-direction: column;
     }
     .banner-title {
