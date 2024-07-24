@@ -24,11 +24,16 @@ body {
     color: rgb(230, 83, 60);
 }
 
-.color-2 {
+.color-2,
+.img-title,
+.img-description,
+th {
     color: rgb(255, 255, 255);
 }
 
-.color-3 {
+.color-3,
+.img-subtitle,
+td {
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -40,9 +45,10 @@ body {
     max-width: 90%;
     margin: 0 auto;
 }
-img{
+
+img {
     width: 100%;
-    
+
 }
 
 /* navbar styles */
@@ -64,8 +70,8 @@ img{
 }
 
 .navbar-title {
-    font-size: 2rem;
-    font-weight: 800;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 .menubar ul li {
@@ -87,15 +93,6 @@ img{
     border-radius: 15px;
 }
 
-.btn {
-    background-color: rgb(230, 83, 60);
-    padding: 10px 30px;
-    border-radius: 15px;
-    font-size: .7rem;
-    border: none;
-
-}
-
 /* banner styles */
 .banner-container {
     justify-content: space-between;
@@ -112,17 +109,29 @@ img{
     max-width: 50%;
     line-height: 24px;
 }
+
 .banner-img {
     position: relative;
 }
+
+.btn {
+    background-color: rgb(230, 83, 60);
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-size: .9rem;
+    border: none;
+
+}
+
 .btn-primary {
     border: 1px solid rgb(255, 255, 255);
     background-color: transparent;
     padding: 10px 30px;
     border-radius: 30px;
     margin-left: 5px;
-    font-size: .7rem;
+    font-size: .9rem;
 }
+
 .five-hundred {
     position: absolute;
     top: 128px;
@@ -134,83 +143,111 @@ img{
     background-color: rgba(255, 255, 255, 0.1);
     padding: 13px;
 }
+
 .title {
     font-size: 2rem;
     font-weight: 900;
 }
+
 .sub-title {
     font-size: 0.9rem;
     font-weight: 300;
 }
+
 .three-hudred {
     position: absolute;
     height: 41px;
-    width: 110px;
-    padding: 20px;
+    width: 150px;
+    padding: 22px 0px 26px 55px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 14px;
-    background-color: rgba(48, 48, 48, 0.54);
+    background-color: rgba(48, 48, 48, 0.74);
     top: 417px;
-    left: -69px;
+    left: -119px;
 }
+
+.three-hudred ::after {
+    position: absolute;
+    content: '';
+    width: 35px;
+    height: 35px;
+    top: 27px;
+    left: 11px;
+    border-radius: 50%;
+    background: rgb(230, 83, 60);
+}
+
 .heading {
     font-size: 1.5rem;
     font-weight: 800;
 }
+
 .sub-heading {
     font-size: .9rem;
     font-weight: 400;
 }
+
 /* change your habit section  */
-.habit-container{
-    text-align:center ;
-    margin-top: 100px ;  
+.habit-container {
+    text-align: center;
+    margin-top: 100px;
 }
-.habit-title{
-    font-size: 1.75rem;
+
+.habit-title {
+    font-size: 3rem;
     font-weight: 800;
     margin-bottom: 10px
 }
-.habit-description{
-   font-size: .7rem;
-   font-weight: 400;
-   margin-bottom: 20px;
-   line-height: 18px;
+
+.habit-description {
+    font-size: .9rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 18px;
 }
-.card-container{
+
+.card-container {
     gap: 50px;
 }
-.card{
-  padding: 30px;
+
+.card {
+    padding: 30px;
 
 }
+
 .card img {
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 50%; 
+    border-radius: 50%;
 }
-.card-title{
-text-align: center;
-margin-top: 15px;
-font-size: .9rem;
-margin-bottom: 10px;
+
+.card-title {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
-.card-description{
-text-align: center;
-font-size: .8rem;
+
+.card-description {
+    text-align: center;
+    font-size: .9rem;
 }
+
 /* run styles */
-.run-container{
- margin: 20px 40px;
-   border-radius: 10px;
-   padding: 30px;
-   background-color: rgba(48, 48, 48, 0.54) ;
-   gap: 150px;
+.run-container {
+    margin: 20px 40px;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgba(48, 48, 48, 0.54);
+    gap: 150px;
 }
-.run{
+
+.run {
     width: 60%;
 }
-.run h2{
-    font-size: 36px;
+
+.run h2 {
+    font-size: 46px;
+    font-weight: 900;
 }
 
 .run-subtitle {
@@ -219,39 +256,28 @@ font-size: .8rem;
     padding: 0 95px 0px 0px;
     margin-bottom: 10px;
 }
-.run-img{
-    height: 250px;
+
+.run-img {
+    height: 300px;
     width: 40%;
 }
-.run-img img{
-    border-radius:10px; 
-   height: 100%;
 
-   
+.run-img img {
+    border-radius: 10px;
+    height: 100%;
 }
+
 .btn-secondary {
     background-color: rgb(230, 83, 60);
-    padding: 15px 42px;
-    border-radius: 15px;
-    font-size: .7rem;
+    padding: 15px 55px;
+    border-radius: 20px;
+    font-size: .9rem;
     border: none;
     margin: 24px 0 0 0;
+    color: rgb(255, 255, 255);
 }
-/* training styles */
-.training-container{
-    
-}
-.training{
-    margin:80px 30px;
-}
-.training-img-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-   
-}
-/* BMI Calculator styles */
-  
 
+/* responsive styles */
 @media screen and (max-width:576px) {
 
     .bar {
@@ -267,10 +293,12 @@ font-size: .8rem;
     .run-container {
         flex-direction: column;
     }
+
     .habit-container {
         margin-top: 0px;
     }
-    .card-container{
+
+    .card-container {
         gap: 0;
     }
 
