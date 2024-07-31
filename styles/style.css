@@ -37,9 +37,11 @@ th {
 td {
     color: rgba(255, 255, 255, 0.5);
 }
-.color-4{
+
+.color-4 {
     color: orange;
 }
+
 .display-flex {
     display: flex;
 }
@@ -455,6 +457,14 @@ table {
     font-weight: 600;
 }
 
+.form-container {
+    display: grid;
+    grid-template-areas:
+        "input-1 input-2"
+        "input-3 option-1"
+        "option-2 option-2";
+}
+
 input {
     height: 36px;
     width: 45%;
@@ -462,7 +472,7 @@ input {
     background-color: rgba(48, 48, 48, 0.361);
     margin-bottom: 8px;
     border: none;
-    padding: 0 10px;
+    padding: 0 105px 0 15px;
 }
 
 input::placeholder {
@@ -471,32 +481,48 @@ input::placeholder {
     font-weight: 600;
 }
 
+#input-1 {
+    grid-area: input-1;
+}
+
+#input-2 {
+    grid-area: input-2;
+}
+
+#input-3 {
+    grid-area: input-3;
+}
+
 #option-1 {
     height: 36px;
-    width: 49%;
+    width: 96%;
     border: none;
     border-radius: 7px;
     background-color: rgba(48, 48, 48, 0.361);
     margin-bottom: 8px;
-    padding: 0 10px;
+    padding-left: 10px;
     color: rgba(154, 139, 139, 0.691);
     font-size: 1rem;
     font-weight: 600;
+    grid-area: option-1;
 }
 
 #option-2 {
     height: 36px;
-    width: 100%;
+    width: 98%;
     border: none;
     border-radius: 7px;
     background-color: rgba(48, 48, 48, 0.361);
     margin-bottom: 8px;
-    padding: 0 10px;
+    padding-left: 10px;
     color: rgba(154, 139, 139, 0.691);
     font-size: 1rem;
     font-weight: 600;
+    grid-area: option-2;
+
 
 }
+
 
 /* team styles */
 .team {
@@ -570,23 +596,26 @@ input::placeholder {
 }
 
 /* testimonial styles */
-.testimonial-title{
+.testimonial-title {
     text-align: center;
     font-size: 3rem;
     font-weight: 900;
     margin: 120px 0;
 }
-.testimonial-card{
-gap: 30px;
+
+.testimonial-card {
+    gap: 30px;
 }
-.card-testmonial{
-background-color: darkcyan;
-position: relative;
-padding: 80px 20px 20px 20px;
-text-align: center;
-width: 33%;
-border-radius: 5px;
+
+.card-testmonial {
+    background-color: darkcyan;
+    position: relative;
+    padding: 80px 20px 20px 20px;
+    text-align: center;
+    width: 33%;
+    border-radius: 5px;
 }
+
 .card-testmonial-img {
     width: 115px;
     height: 115px;
@@ -598,12 +627,15 @@ border-radius: 5px;
     border: 2px solid white;
 
 }
-.card-testmonial-img img{
-        height: 100%;
+
+.card-testmonial-img img {
+    height: 100%;
 }
+
 .card-testmonial h3 {
     margin-bottom: 10px;
 }
+
 .card-testmonial p {
     margin-top: 10px;
     line-height: 24px;
@@ -699,18 +731,49 @@ footer {
 
     .banner-description {
         margin: 24px 0;
-        max-width: 50%;
+        max-width: 60%;
         line-height: 24px;
+    }
+
+    .btn,
+    .btn-primary {
+        padding-right: 23px;
+        font-size: .9rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .sub-title,
+    .sub-heading {
+        font-size: .8rem;
+    }
+
+    .heading {
+        font-size: 1.3rem;
     }
 
     .five-hundred {
         top: 50px;
-        right: -21px;
+        right: 6px;
+        width: 120px;
+        height: 53px;
+
     }
 
     .three-hundred {
+        height: 34px;
+        width: 91px;
+        padding-top: 12px;
         top: 243px;
-        left: -41px;
+        left: 17px;
+    }
+
+    .three-hundred ::after {
+        width: 30px;
+        height: 30px;
+        top: 24px;
     }
 
     .habit-container {
@@ -718,13 +781,13 @@ footer {
     }
 
     .habit-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .habit-description {
         font-size: .9rem;
         line-height: 24px;
-        padding: 0px 99px;
+        padding: 0px 52px;
     }
 
     .card {
@@ -737,7 +800,6 @@ footer {
 
     .card-description {
         font-size: .9rem;
-        padding: 0 37px;
     }
 
     .run {
@@ -745,12 +807,12 @@ footer {
     }
 
     .run h2 {
-        font-size: 2rem;
-        padding-right: 128px;
+        font-size: 1.75rem;
+        padding-right: 74px;
     }
 
     .run-subtitle {
-        padding-right: 182px;
+        padding-right: 74px;
     }
 
     .run-img {
@@ -759,6 +821,11 @@ footer {
 
     .run-container {
         gap: 46px;
+    }
+
+    .btn-secondary {
+        padding: 15px 65px;
+        font-size: .9rem;
     }
 
     .training-img-container {
@@ -780,13 +847,14 @@ footer {
     }
 
     .training-title {
-        font-size: 2.75rem;
+        font-size: 2.25rem;
         font-weight: 700;
     }
 
 
-    .training-description {
-        padding-right: 160px;
+    .training-description,
+    .bmi-description {
+        padding-right: 67px;
     }
 
     .bmi-calculate-container {
@@ -803,12 +871,8 @@ footer {
     }
 
     .bmi-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
         margin-bottom: 14px;
-    }
-
-    .bmi-description {
-        padding-right: 160px;
     }
 
     .bmi-chart {
@@ -825,20 +889,19 @@ footer {
 
     .calculation-description {
         line-height: 24px;
-        padding-right: 83px;
     }
 
     input {
-        width: 44%;
+        padding: 0 72px 0 15px;
     }
 
     .team-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .team-description {
         line-height: 24px;
-        padding: 0 99px;
+        padding: 0 52px;
     }
 
     .team-img-container {
@@ -857,15 +920,22 @@ footer {
     #img-4 {
         display: none;
     }
+
     .testimonial-title {
         font-size: 2rem;
         margin-top: 90px;
     }
+
     .card-testmonial {
         width: 62%;
-        margin-left: 72px;
+        margin-left: 57px;
         margin-bottom: 75px;
     }
+
+    .card-testmonial-img {
+        left: 88px;
+    }
+
     footer {
         margin-top: 0;
     }
@@ -875,17 +945,23 @@ footer {
         padding-top: 20px;
     }
 
+    .fitness-title {
+        font-size: 3.75rem;
+
+    }
+
     .fitness-description {
-        padding-right: 213px;
+        padding-right: 104px;
         margin-top: 20px;
     }
 
     .list-title,
     .list-item-title {
         margin: 30px 0 40px 0;
+        font-size: 1.75rem;
     }
 
     .items li a {
-        font-size: 1.4rem;
+        font-size: 1.25rem;
     }
 }
