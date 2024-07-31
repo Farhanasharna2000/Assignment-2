@@ -843,7 +843,7 @@ footer {
 
     .img-description-right {
         top: 30px;
-        left: 159px;
+        left: 55%;
     }
 
     .training-title {
@@ -892,7 +892,14 @@ footer {
     }
 
     input {
-        padding: 0 72px 0 15px;
+        padding: 0 17px 0 15px;
+        width: 76%;
+    }
+    input::placeholder {
+        font-size: 0.7rem;
+    }
+    #option-1,#option-2 {
+        font-size: 0.7rem;
     }
 
     .team-title {
@@ -928,12 +935,12 @@ footer {
 
     .card-testmonial {
         width: 62%;
-        margin-left: 57px;
+        margin-left: 14%;
         margin-bottom: 75px;
     }
 
     .card-testmonial-img {
-        left: 88px;
+        left: 27%;
     }
 
     footer {
