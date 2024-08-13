@@ -615,17 +615,16 @@ input::placeholder {
     width: 33%;
     border-radius: 5px;
 }
-
 .card-testmonial-img {
     width: 115px;
     height: 115px;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    top: -63px;
-    left: 111px;
+    top: 0;
+    left: 50%;
     border: 2px solid white;
-
+    transform: translate(-50%, -50%);
 }
 
 .card-testmonial-img img {
@@ -939,9 +938,7 @@ footer {
         margin-bottom: 75px;
     }
 
-    .card-testmonial-img {
-        left: 27%;
-    }
+
 
     footer {
         margin-top: 0;
